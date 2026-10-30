@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1e9;
+    color: #4b3025;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #4b3025;
+}
+.logo {
+    color: #f8e4c9;
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d8ad83;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.hello {
+    color: #a66a42;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    color: #4b3025;
+}
+
+h3 {
+    color: #96613e;
+    margin-bottom: 18px;
+}
+
+.home-text p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #70452f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a66a42;
+}
+
+.profile img {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 150px 150px 20px 20px;
+    border: 7px solid #dfc2a5;
+}
+
+.about, .skills, .contact {
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.about {
+    background-color: #ead9c7;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #70452f;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.experience{
+    background-color: #d8ad83;
+}
+.experience-box{
+    background-color: #d8ad83;
+    min-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border-left: #a66a42;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #ead9c7;
+    line-height: 2;
+}
+
+footer {
+    background-color: #4b3025;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 45px 7%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .profile img {
+        width: 220px;
+        height: 250px;
+    }
+}
